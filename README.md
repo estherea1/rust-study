@@ -2712,7 +2712,22 @@ fn expensive_test() {
 - 闭包（第十三章）
 - 迭代器&trait对象（第十七章）
 
-section 1: 接受命令行参数
+---
+
+## Chapter 13 Functional Language Features: Iterators and Closures
+
+函数式编程(functional programming)：将函数作为参数值或其他函数的返回值、将函数赋值给变量以供之后执行等等。
+
+- 闭包（Closures），一个可以储存在变量里的类似函数的结构
+- 迭代器（Iterators），一种处理元素序列的方式
+
+### section 1: Closures: Anonymous Functions that Capture Their Environment
+
+### section 2: Processing a Series of Items with Iterators
+
+### section 3: Improving Our I/O Project
+
+### section 4: Comparing Performance: Loops vs. Iterators
 
 ---
 
