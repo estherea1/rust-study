@@ -11,7 +11,7 @@ fn main() {
     
     //parse_config提取参数
     let config = Config::build(&args).unwrap_or_else(|err| {
-        println!("Problem parsing arguments: {err}");
+        eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });
 
@@ -19,7 +19,7 @@ fn main() {
     println!("在文件{}中搜索", config.file_path);
 
     if let Err(e) = minigrep::run(config) {
-        println!("错误：{e}");
+        eprintln!("错误：{e}");
         process::exit(1);
     }
 }
